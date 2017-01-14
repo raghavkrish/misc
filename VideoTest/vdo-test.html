@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="http://vjs.zencdn.net/5.11/video-js.min.css">
+    <script src="http://vjs.zencdn.net/5.11/video.min.js"></script>
+  </head>
+  <body>
+
+    <video id="my-player" class="video-js" controls preload="auto" poster="http://vjs.zencdn.net/v/oceans.png" data-setup='{}'>
+      <source src="http://download1688.mediafire.com/8ts4sj35s7tg/8w33gpr112krbex/VID_20170113_215649.mp4" type="video/mp4"></source>
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">
+          supports HTML5 video
+        </a>
+      </p>
+    </video>
+
+    <script type="text/javascript">
+      var player = videojs('my-player', {}, function onPlayerReady() {
+        videojs.log('ready!');
+
+        // In this context, `this` is the player that was created by Video.js.
+        this.play();
+
+        // How about an event listener?
+        this.on('ended', function() {
+          videojs.log('Video Over');
+        });
+      });
+    </script>
+
+  </body>
+</html>
