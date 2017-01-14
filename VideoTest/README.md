@@ -1,28 +1,3 @@
-**Rails App for uploading video**
+# Video Uploader
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This app uses <tt>video.js</tt> framework to upload apps to a hosting site. It also <tt>converts original video to mp4/webm formats</tt> and uploads the videos including the original using <tt>carrierwave-video</tt> framework
